@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #272D2D;
+    background-color: #272D2D;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.grid-container {
+    background-color: #EDF5FC;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90vw;
+    height: 90vh;
+    gap: 10px;
+    border-radius: 10px;
+    border: 5px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #272D2D;
+    background-color: #B8C5D6;
+    border: 5px solid #272D2D;
+    border-radius: 10px;
+    padding: 10px;
+    width: 85vw;
+}
+
+.profile-picture {
+    border: 5px solid black;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 10px;
+}
+
+.logo {
+    height: 5vh;
+    width: 50vw;
+}
+
+nav {
+    color: #EDF5FC;
+    width: 70vw;
+    border-radius: 10px;
+    border: 5px solid black;
+    background-color: #272D2D;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #B8C5D6;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+    width: 90vw;
+    height: 6vh;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 426px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        width: 90vw;
+        height: 90vh;
+    }
+    h1 {
+        width: 85vw;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .profile-picture {
+        height: 40vh;
+        width: 40vh;
+    }
+    .logo {
+        height: 5vh;
+        width: 40vw;
+    }
+    nav {
+        width: 80vw;
+    }
+    footer {
+        width: 90vw;
+        height: 6vh;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        width: 75vw;
+        height: 75vh;
+    }
+    h1 {
+        width: 30vw;
+        padding: 50px;
+    }
+    h2 {
+        grid-column-start: span 2;
+    }
+    .profile-picture {
+        height: 30vh;
+        width: 30vh;
+    }
+    .logo {
+        width: 25vw;
+    }
+    nav {
+        grid-column-start: span 2;
+        width: 50vw;
+    }
+    footer {
+        width: 75vw;
+        height: 6vh;
+    }
+}
