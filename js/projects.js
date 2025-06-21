@@ -34,6 +34,7 @@ async function populateRepos() {
         listContainer.classList.add('repo-list-item');
         const projectTitle = document.createElement('h2');
         const projectLink = document.createElement('a');
+        projectLink.classList.add('project-links');
         const projectDescription = document.createElement('p');
 
         projectLink.href = repo.html_url;

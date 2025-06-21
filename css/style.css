@@ -14,11 +14,11 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-a {
-    color:#23CE6B;
+.project-links {
+    color:#B8C5D6;
 }
 
-a:hover {
+.project-links:hover {
     color:aquamarine;
 }
 
